@@ -1,0 +1,28 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slot {
+  width: 276.5px;
+  height: 237px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23.7px;
+}
+.slot .reel {
+  width: 79px;
+  height: 237px;
+  border: 1px solid black;
+  background-image: url("../1313.png");
+  background-repeat: repeat-y;
+  background-position: 0 10px;
+}/*# sourceMappingURL=style.css.map */
