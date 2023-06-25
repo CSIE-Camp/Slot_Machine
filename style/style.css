@@ -20,17 +20,21 @@ div.all {
 div.all .slot {
   width: 416px;
   height: 312px;
-  border: 1px solid black;
+  border: 1px solid rgb(247, 247, 15);
+  border-radius: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: rgb(243, 224, 157);
+  background: radial-gradient(circle, rgb(243, 224, 157) 0%, rgba(218, 162, 80, 0.5271358543) 25%, rgba(248, 222, 109, 0.5103291317) 100%);
   padding: 34.32px;
 }
 div.all .slot .reel {
   position: relative;
   width: 104px;
   height: 312px;
-  border: 1px solid black;
+  border: 2px solid rgb(139, 106, 60);
+  border-radius: 15px;
   background-image: url("../0625.png");
   background-repeat: repeat-y;
   background-position: 0 10px;

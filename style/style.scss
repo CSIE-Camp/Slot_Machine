@@ -23,17 +23,21 @@ div.all {
     .slot {
         width: 4 * $slot_width;
         height: 3 * $slot_height;
-        border: 1px solid black;
+        border: 1px solid rgb(247, 247, 15);
+        border-radius: 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background: rgb(243, 224, 157);
+        background: radial-gradient(circle, rgba(243, 224, 157, 1) 0%, rgba(218, 162, 80, 0.5271358543417367) 25%, rgba(248, 222, 109, 0.510329131652661) 100%); // background-image: url("../001.png");
         padding: 0.33 * $slot_width;
 
         .reel {
             position: relative;
             width: $slot_width;
             height: $slot_height * 3;
-            border: 1px solid black;
+            border: 2px solid rgb(139, 106, 60);
+            border-radius: 15px;
             background-image: url("../0625.png");
             // margin-left: auto;
             // margin-right: auto;
