@@ -9,7 +9,12 @@ body {
   align-items: center;
 }
 
-.slot {
+div.all {
+  display: flex;
+  align-items: center;
+  height: 312px;
+}
+div.all .slot {
   width: 416px;
   height: 312px;
   border: 1px solid black;
@@ -18,7 +23,7 @@ body {
   align-items: center;
   padding: 34.32px;
 }
-.slot .reel {
+div.all .slot .reel {
   position: relative;
   width: 104px;
   height: 312px;
@@ -26,4 +31,27 @@ body {
   background-image: url("../0625.png");
   background-repeat: repeat-y;
   background-position: 0 10px;
+}
+div.all .btn {
+  margin-left: 2rem;
+  border: 1px solid black;
+  height: 70%;
+  width: 30px;
+}
+div.all .btn:hover {
+  cursor: pointer;
+}
+div.all .btn .circle {
+  border: 1px solid black;
+  width: 100%;
+  height: 30px;
+  border-radius: 100%;
+  background-color: rgb(226, 87, 76);
+  transform: translatey(185px);
+}
+div.all .btn .line {
+  border: 1px solid black;
+  width: 20px;
+  height: 80px;
+  transform: translatey(185px);
 }/*# sourceMappingURL=style.css.map */
