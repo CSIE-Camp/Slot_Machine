@@ -1,6 +1,6 @@
-$slot_width : 79px;
+$slot_width : 104px;
 
-$slot_height : 79px;
+$slot_height : 104px;
 
 html,
 body {
@@ -14,19 +14,22 @@ body {
 }
 
 .slot {
-    width: 3.5 * $slot_width;
+    width: 4 * $slot_width;
     height: 3 * $slot_height;
     border: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.3 * $slot_width;
+    padding: 0.33 * $slot_width;
 
     .reel {
+        position: relative;
         width: $slot_width;
         height: $slot_height * 3;
         border: 1px solid black;
-        background-image: url("../1313.png");
+        background-image: url("../0625.png");
+        // margin-left: auto;
+        // margin-right: auto;
         background-repeat: repeat-y;
         background-position: 0 10px;
     }

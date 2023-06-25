@@ -10,19 +10,20 @@ body {
 }
 
 .slot {
-  width: 276.5px;
-  height: 237px;
+  width: 416px;
+  height: 312px;
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 23.7px;
+  padding: 34.32px;
 }
 .slot .reel {
-  width: 79px;
-  height: 237px;
+  position: relative;
+  width: 104px;
+  height: 312px;
   border: 1px solid black;
-  background-image: url("../1313.png");
+  background-image: url("../0625.png");
   background-repeat: repeat-y;
   background-position: 0 10px;
 }/*# sourceMappingURL=style.css.map */
