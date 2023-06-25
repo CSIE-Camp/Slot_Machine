@@ -2,15 +2,41 @@ const icon_width = 104;
 const icon_height = 104;
 const num_icons = 5;
 const time_per_icon = 100;
-const roll = (reel = 0) => {
+let Mycase = Math.floor(Math.random() * 10); // 0 - 9
+const randomNum = Math.floor(Math.random() * 10);
+const roll = (reel, offset = 0) => {
   const delta = 2 * Math.floor(Math.random() * 10);
   const style = getComputedStyle(reel),
   backgroundPositionY = parseFloat(style["background-position-y"]);
   return new Promise((resolve, reject) =>{
     
     reel.style.transition = `background-position-y ${8 + delta * time_per_icon}ms`;
-    reel.style.backgroundPositionY =`${ 104 * delta }px`;
-
+    
+    switch (Mycase){
+      case 0:
+        reel.style.backgroundPositionY =`${ 104 * 0 + (1014 * randomNum) }px`;
+        break;
+      case 1:
+        reel.style.backgroundPositionY =`${ 104 * 2 + (1014 * randomNum)}px`;
+        break;
+      case 2:
+        reel.style.backgroundPositionY =`${ 104 * 8 + (1014 * randomNum)}px`;
+        break;
+      case 3:
+        reel.style.backgroundPositionY =`${ 104 * 6 + (1014 * randomNum)}px`;
+        break;
+      case 4:
+      case 5:
+        break;
+      case 6:
+      case 7:
+      case 8:
+      case 9:
+        document.querySelector();
+        break;
+      default:
+        break;  
+    }
     setTimeout(() => {
       resolve(delta)
     }, (8 + delta) * time_per_icon)
@@ -19,13 +45,13 @@ const roll = (reel = 0) => {
 
 function rollAll() {
   const reelList = document.querySelectorAll('.slot > .reel');
-  let Mycase = Math.floor(Math.random() * 10); // 0 - 9
+  
   console.log(Mycase);
   
   // console.log(Math.floor(Math.random() * 10)); // 0 - 9
 
   Promise
-  .all(  [...reelList].map((reel) => roll(reel)))
+  .all(  [...reelList].map((reel, i) => roll(reel, i)))
   .then((delta) => {
     
     switch (Mycase){
