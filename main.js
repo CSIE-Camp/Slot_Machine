@@ -1,7 +1,7 @@
 const icon_width = 104;
 const icon_height = 104;
 const num_icons = 5;
-const time_per_icon = 100;
+const time_per_icon = 1000;
 let Mycase = Math.floor(Math.random() * 10); // 0 - 9
 const randomNum = Math.floor(Math.random() * 10);
 const roll = (reel, offset = 0) => {
