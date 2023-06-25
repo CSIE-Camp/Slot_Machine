@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 $slot_width : 104px;
 
 $slot_height : 104px;
@@ -11,6 +12,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(241, 235, 214);
+    background: radial-gradient(circle, rgba(241, 235, 214, 1) 0%, rgba(221, 205, 183, 0.5271358543417367) 25%, rgba(246, 235, 186, 0.510329131652661) 100%);
 }
 
 div.all {
@@ -23,7 +26,7 @@ div.all {
     .slot {
         width: 4 * $slot_width;
         height: 3 * $slot_height;
-        border: 1px solid rgb(247, 247, 15);
+        border: 4mm ridge rgba(237, 249, 7, 0.6);
         border-radius: 15px;
         display: flex;
         justify-content: space-between;
@@ -36,7 +39,7 @@ div.all {
             position: relative;
             width: $slot_width;
             height: $slot_height * 3;
-            border: 2px solid rgb(139, 106, 60);
+            border: 2mm ridge rgba(139, 106, 60, 0.6);
             border-radius: 15px;
             background-image: url("../0625.png");
             // margin-left: auto;
@@ -57,6 +60,7 @@ div.all {
             &::before {
                 left: 0;
                 transform: translate(-200%, -50%);
+                border-radius: 100%;
             }
 
             &::after {
@@ -70,8 +74,9 @@ div.all {
         margin-top: 2rem;
         font-size: 2rem;
         background: white;
-        border: 1px solid rgba(black, 0.3);
-        font-family: "思源黑體";
+        border: 2mm ridge rgba(139, 106, 60, 0.6);
+
+        font-family: 'Noto Sans TC', sans-serif;
 
         &:hover {
             cursor: pointer;
