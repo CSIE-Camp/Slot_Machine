@@ -9,7 +9,7 @@ const roll = (reel, offset = 0) => {
   const style = getComputedStyle(reel),
   backgroundPositionY = parseFloat(style["background-position-y"]);
   return new Promise((resolve, reject) =>{
-    
+    // console.log("123:" + offset);
     reel.style.transition = `background-position-y ${8 + delta * time_per_icon}ms`;
     
     switch (Mycase){
@@ -27,12 +27,23 @@ const roll = (reel, offset = 0) => {
         break;
       case 4:
       case 5:
+        if(offset == 0 || offset == 1){
+          reel.style.backgroundPositionY =`${ 104 * 6 + (1014 * randomNum)}px`;
+        }
+        else {
+          reel.style.backgroundPositionY =`${ 104 * 4 + (1014 * randomNum)}px`;
+        }
         break;
       case 6:
       case 7:
       case 8:
       case 9:
-        document.querySelector();
+        if(offset == 0){
+          reel.style.backgroundPositionY =`${ 104 * 6 + (1014 * randomNum)}px`;
+        }
+        else {
+          reel.style.backgroundPositionY =`${ 104 * 4 + (1014 * randomNum)}px`;
+        }
         break;
       default:
         break;  
