@@ -1,9 +1,9 @@
 const icon_width = 104;
 const icon_height = 104;
 const num_icons = 5;
-const time_per_icon = 1000;
+const time_per_icon = 500;
 let Mycase = Math.floor(Math.random() * 10); // 0 - 9
-const randomNum = Math.floor(Math.random() * 10);
+const randomNum = Math.floor(Math.random() * 8) + 2;
 const roll = (reel, offset = 0) => {
   const delta = 2 * Math.floor(Math.random() * 10);
   const style = getComputedStyle(reel),
@@ -50,7 +50,7 @@ const roll = (reel, offset = 0) => {
     }
     setTimeout(() => {
       resolve(delta)
-    }, (8 + delta) * time_per_icon)
+    }, 8 + delta * time_per_icon)
   })
 };
 
